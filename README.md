@@ -1,4 +1,4 @@
-# m1-multimc-hack
+# m1-multimc-hack-1.8
 
 Want to get Minecraft <1.12.2 running natively on a Mac with an M1 "Apple Silicon" chip?
 
