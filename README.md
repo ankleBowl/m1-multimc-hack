@@ -1,8 +1,8 @@
 # m1-multimc-hack
 
-Want to get Minecraft running natively on a Mac with an M1 "Apple Silicon" chip? Thanks to [the excellent work](https://gist.github.com/tanmayb123/d55b16c493326945385e815453de411a) by [Tanmay Bakshi](https://gist.github.com/tanmayb123), it's possible!
+Want to get Minecraft <1.12.2 running natively on a Mac with an M1 "Apple Silicon" chip?
 
-This repo contains a wrapper script to be used with [MultiMC](https://multimc.org) that will configure any MultiMC instance to use the Apple Silicon native libraries from Tanmay's work. All you have to do is set the wrapper command and make sure you're using an M1-compatible JDK, and it should just work.
+This repo contains a wrapper script to be used with [MultiMC](https://multimc.org) that will configure any MultiMC instance to use the Apple Silicon native libraries from lunar client. All you have to do is set the wrapper command and make sure you're using an M1-compatible JDK, and it should just work.
 
 ## Setup and Usage
 
@@ -71,14 +71,6 @@ The instructions above will enable the native Apple Silicon libs for a single Mu
 
 If you do set the configuration globally, you can always change it to an Intel JDK and remove the wrapper command on a per-instance basis, for example if you want to play with Forge mods before compatibility is sorted out.
 
-## Minecraft Version Compatibility
-
-Minecraft versions prior to 1.14 crash with OpenGL errors on launch. If you care enough, you could probably get them to work by
-figuring out which version of LWJGL those versions depend on and compiling them yourself. You'd probably also have to add some
-logic to the wrapper script to make sure you use the right LWJGL version for the corresponding Minecraft version. Not worth it to me personally, but you do you :)
-
-## Support, etc
-
-No support here, sorry. I set this up as a favor for a friend for Xmas, and I won't actually have an M1 Mac of my own for a few weeks. Also, I've got a new baby and don't really have time to help.
+## Credits
 
 The `mcwrap.py` script was written by Yusef Napora, and is public domain. Please feel free to fork and improve, but expect PRs & issues, etc to be routed to the Sirius Cybernetics Corporation, Complaints Division. [Share and Enjoy!](https://hitchhikers.fandom.com/wiki/Share_and_Enjoy)
