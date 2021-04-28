@@ -28,7 +28,7 @@ mkdir -p ~/Minecraft
 cd ~/Minecraft
 
 # clone this repo
-git clone https://github.com/yusefnapora/m1-multimc-hack.git
+git clone https://github.com/ankleBowl/m1-multimc-hack-1.8.git
 ```
 
 ### Configure MultiMC
@@ -45,14 +45,14 @@ It should open a window with a list of Java versions. Find the one that says "zu
 
 ![Screenshot of JVM list with correct JVM highlighted](./screenshots/select-zulu-jvm.png)
 
-Still in the Settings pane, switch to the "Custom Commands" tab. Check the "Custom Commands" checkbox. In the "Wrapper Command" box, enter the full path to the `mcwrap.py` script from this repo, e.g. `/Users/your-username/stuff/m1-multimc-hack/mcwrap.py`.
+Still in the Settings pane, switch to the "Custom Commands" tab. Check the "Custom Commands" checkbox. In the "Wrapper Command" box, enter the full path to the `mcwrap.py` script from this repo, e.g. `/Users/your-username/stuff/m1-multimc-hack-1.8/mcwrap.py`.
 
 ![Screenshot of Custom Commands tab, with Wrapper Command box highlighted](./screenshots/custom-command.png)
 
 An easy way to get the full path (assuming you put this repo in `~/Minecraft`) is to open a terminal and enter:
 
 ```shell
-ls ~/Minecraft/m1-multimc-hack/mcwrap.py | pbcopy
+ls ~/Minecraft/m1-multimc-hack-1.8/mcwrap.py | pbcopy
 ```
 
 This will expand the `~` character to the full path to your home directory (e.g. `/Users/yourname`), and copy the whole thing onto your clipboard using the `pbcopy` command. Now you can paste it into the "Wrapper Command" box.
@@ -73,4 +73,4 @@ If you do set the configuration globally, you can always change it to an Intel J
 
 ## Credits
 
-The `mcwrap.py` script was written by Yusef Napora, and is public domain. Please feel free to fork and improve, but expect PRs & issues, etc to be routed to the Sirius Cybernetics Corporation, Complaints Division. [Share and Enjoy!](https://hitchhikers.fandom.com/wiki/Share_and_Enjoy)
+The `mcwrap.py` script was written by Yusef Napora and very simply modified by me, and is public domain. Please feel free to fork and improve, but expect PRs & issues, etc to be routed to the Sirius Cybernetics Corporation, Complaints Division. [Share and Enjoy!](https://hitchhikers.fandom.com/wiki/Share_and_Enjoy)
