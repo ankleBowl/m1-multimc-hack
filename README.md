@@ -8,7 +8,7 @@ This repo contains a wrapper script to be used with [MultiMC](https://multimc.or
 
 ### Pre-requisites
 
-First, install the [Zulu Java 11 JDK for macOS ARM64](https://cdn.azul.com/zulu/bin/zulu11.43.1015-ca-jdk11.0.9.1-macos_aarch64.dmg).
+First, install the [Zulu Java 8 JDK for macOS ARM64](https://cdn.azul.com/zulu/bin/zulu8.54.0.21-ca-jdk8.0.292-macosx_aarch64.dmg).
 
 You'll also need a standard install of MultiMC.
 
@@ -41,7 +41,7 @@ Go to Settings, then make sure the "Java Installation" checkbox is checked. Then
 
 ![Screenshot of instance Settings pane with "Auto-detect" button highlighted](./screenshots/detect-jvm.png)
 
-It should open a window with a list of Java versions. Find the one that says "zulu-11" in the path and select it, then hit OK. (You may need to resize the window to see the full path.)
+It should open a window with a list of Java versions. Find the one that says "zulu-8" in the path and select it, then hit OK. (You may need to resize the window to see the full path.)
 
 ![Screenshot of JVM list with correct JVM highlighted](./screenshots/select-zulu-jvm.png)
 
